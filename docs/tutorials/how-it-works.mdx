@@ -177,9 +177,9 @@ return <mesh raycast={useCamera(anotherCamera)} />
 
 ## Render Loop
 
-By default, Fiber will setup a render loop that renders the default `scene` from the default `camera` to a [WebGLRenderer](https://threejs.org/docs/#api/en/renderers/WebGLRenderer).
+By default, Fiber will set up a render loop that renders the default `scene` from the default `camera` to a [WebGLRenderer](https://threejs.org/docs/#api/en/renderers/WebGLRenderer).
 
-The loop is setup using [setAnimationLoop](https://threejs.org/docs/#api/en/renderers/WebGLRenderer.setAnimationLoop), which will execute its callback every time a new frame is renderable. This is what will happen every render:
+The loop is set up using [setAnimationLoop](https://threejs.org/docs/#api/en/renderers/WebGLRenderer.setAnimationLoop), which will execute its callback every time a new frame is renderable. This is what will happen every render:
 
 1. All global before effects are executed
 2. Clock delta is saved - implying all `useFrame` calls will share the same `delta`
